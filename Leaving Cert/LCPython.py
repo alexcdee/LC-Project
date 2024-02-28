@@ -21,6 +21,8 @@ plt.show()
 '''
 
 # What if Questions
+# #What if the user listened to music/podcast/ebook while on the walk
+'''
 def switch(user):
     if user == 1:
         one = input('What did you do before?' )
@@ -33,8 +35,8 @@ def switch(user):
         return '4'
     elif user == 5:
         return '5'
-
-
+'''
+'''
 user = int(input('On a scale through 1-5. How energized do you feel after the walk/jog/run? '))
 print(switch(user))
-
+'''

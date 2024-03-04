@@ -2,12 +2,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Step 1: Read the CSV file
-df = pd.read_csv('data_steps-2.csv')
+df = pd.read_csv('data_steps.csv')
 
 # Step 2: Extract Data
 x1 = df['steps']
 x2 = df['light']
 y = df['time (seconds)']
+y = y/60
 
 # Step 3: Plot the Data
 plt.figure(figsize=(16, 12))  # Adjust size if needed
@@ -16,7 +17,7 @@ plt.plot(x2, y, label='Light Level', color='red')
 
 # Customize your plot (labels, title, legend, etc.)
 plt.xlabel('Steps and Light Level')
-plt.ylabel('Time (seconds)')
+plt.ylabel('Time (minutes)')
 plt.title('Step Tracker')
 plt.legend()
 
@@ -32,3 +33,12 @@ plt.xlim(0, max(max(x1), max(x2)))
 
 # Show plot
 plt.show()
+
+last_steps_value = df['steps'].iloc[-1]
+print("Last value of steps column:", last_steps_value)
+
+last_seconds_value = df['time (seconds)'].iloc[-1]
+print("Last value of time (seconds) column:", last_seconds_value)
+
+last_light_value = df['light'].iloc[-1]
+print("Last value of light column:", last_light_value)

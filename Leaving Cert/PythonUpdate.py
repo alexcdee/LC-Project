@@ -35,10 +35,16 @@ audio(a1)
 
 # What if / See if user reached the daily goal of amount of steps needed daily
 daily = 7500
+dailyT = 69
 def steps(s1):
     if s1 >= daily:
-        print("Well done! You reach the desired amount of steps for today")
+        s2 = float(input(("Well done! You reach the desired amount of steps for today\nHow long did it take you: ")))
+    if s2 >= dailyT:
+        print('Excellent!')
+    elif s2 < dailyT:
+        print('Not bad, but you improve by the week!')
     elif s1 < daily:
-        s2 = str(input("Don't worry! Some days we don't get the results we want.\nWant soultions on how to improve? Y/N"))
-    if s2
+        s3 = str(input("Don't worry! Some days we don't get the results we want.\nWant soultions on how to improve? Y/N"))
+    if s3
+    
 s1 = int(input('How many steps did you take today'))

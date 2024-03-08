@@ -33,28 +33,64 @@ plt.xticks(list(plt.xticks()[0])[:-1] + specific_values + [max(max(x1), max(x2),
 plt.xlim(0, max(max(x1), max(x2), max(x3)))
 
 # Show plot
-plt.show()
+#plt.show()
 
 # Print last digit of the data
-print("\033[94mSteps\033[0m")
+print("\033[94mSteps\033[0m") # Blue colour text
 last_steps_value = df['steps'].iloc[-1]
 print("Last value of steps column:", last_steps_value)
 print("Average value of steps column:", df['steps'].mean())
 print("Median value of steps column:", df['steps'].median())
-print("\033[95mTime in seconds\033[0m")
+print("Max value of steps column:", df['steps'].max())
+
+print("\033[95mTime in seconds\033[0m") # Red colour text
 last_seconds_value = df['time (seconds)'].iloc[-1]
 print("Last value of time (seconds) column:", last_seconds_value)
 print("Average value of time (seconds) column:", df['time (seconds)'].mean())
 print("Median value of time (seconds) column:", df['time (seconds)'].median())
-print("\033[91mLight Level\033[0m")
+print("Max value of time (seconds) column:", df['time (seconds)'].max())
+
+print("\033[91mLight Level\033[0m") # Pink colour text
 last_light_value = df['light'].iloc[-1]
 print("Last value of light column:", last_light_value)
 print("Average value of light column:", df['light'].mean())
 print("Median value of light column:", df['light'].median())
-print("\033[33mTemperature Level\033[0m")
+print("Max value of light column:", df['light'].max())
+
+
+print("\033[33mTemperature Level\033[0m") # Orange colour text
 last_temp_value = df['temp'].iloc[-1]
 print("Last value of temp column:", last_temp_value)
 print("Average value of temp column:", df['temp'].mean())
 print("Median value of temp column:", df['temp'].median())
+print("Max value of temp column:", df['temp'].max())
 
+# What if user doesn't reach average steps
+# - They are unactive,moderate,active
+# Data online
+steps = 7500
+steps2 = 10000
+time = 69
+# Data from file
+x1 = df['steps'].max()# Step 645
+x2 = df['light'].max() # Light 128
+x3 = df['temp'].max() # Temp 23
+y = (df['time (seconds)'].max()/60) # Time 355 (5.59 minutes)
+def active(userName,x1,y):
+    print("Hello",userName)
+    if x1 < steps:
+        print("User not as active")
+    elif x1 >= steps:
+        print("User is active")
+    elif x1 > steps2:
+        print("User is very active")
+    if y < time:
+        print("User not as active")
+    if y > time:
+        print("User is very active")
 
+userName = str(input('Enter your name: '))
+active(userName,x1,y)
+
+# Expand
+# How active do you want to be per week e.g. float(5.5 hours)

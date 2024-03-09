@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Step 1: Read the CSV file
-df = pd.read_csv('data_steps.csv')
+df = pd.read_csv('data_with_one_hour.csv')
 
 # Step 2: Extract Data
 x1 = df['steps']
@@ -75,19 +75,34 @@ time = 69
 x1 = df['steps'].max()# Step 645
 x2 = df['light'].max() # Light 128
 x3 = df['temp'].max() # Temp 23
-y = (df['time (seconds)'].max()/60) # Time 355 (5.59 minutes)
+y = df['time (seconds)'].max()/60  #Time 355 (5.59 minutes)
+y = round(y)
+# Try to get to do math say userName you're only 5 minutes away etc. to reaching the goal
+newTime = time - y
+newTime2 = (time - y)*(-1)
+belSteps = steps - x1
+aboSteps = (steps - x1)*(-1)
+
 def active(userName,x1,y):
+
     print("Hello",userName)
-    if x1 < steps:
-        print("User not as active")
-    elif x1 >= steps:
-        print("User is active")
-    elif x1 > steps2:
-        print("User is very active")
     if y < time:
-        print("User not as active")
-    if y > time:
-        print("User is very active")
+        print(f"{userName} try to walk for {newTime} minutes more!")
+    elif y == time:
+        print(f"{userName}, well done you reached the daily goal!")
+    elif y > time:
+        print(f"{userName}, excellent! You walked past your daily goal by {newTime2} minutes!")
+        
+    if x1 < steps:
+        print(f"{userName} try to walk {belSteps} steps more!")
+    elif x1 == steps:
+        print(f"{userName} well done you reached the daily goal of {steps} steps!")
+    elif x1 > steps:
+        print(f"{userName}, excellent! You walked past your daily goal by {aboSteps} steps!")
+    elif x1 > steps:
+        print(f"{userName}, amazing! You walked exceeded your daily goal by {aboSteps} steps!")
+
+
 
 userName = str(input('Enter your name: '))
 active(userName,x1,y)

@@ -1,5 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import statistics
+
 
 # Step 1: Read the CSV file
 dataIn = pd.read_csv('Micro-BIT Data.csv')
@@ -38,10 +40,10 @@ plt.xlim(0, max(max(xSteps), max(xLight), max(xTemp)))
 
 # Print last digit of the data
 print("\033[94mSteps\033[0m") # Blue colour text
-print("Average value of steps column:", dataIn['steps'].mean())
-print("Median value of steps column:", dataIn['steps'].median())
-print("Mode value of steps column:", dataIn['steps'].mode())
-print("Max value of steps column:", dataIn['steps'].max())
+print("Average value of steps: ", dataIn['steps'].mean())
+print("Median value of steps column: ", dataIn['steps'].median())
+print("Mode value of steps column: ", dataIn['steps'].mode())
+print("Max value of steps column: ", dataIn['steps'].max())
 
 print("\033[95mTime in seconds\033[0m") # Red colour text
 print("Average value of time (seconds) column:", dataIn['time (seconds)'].mean())
@@ -75,7 +77,7 @@ xTemp = dataIn['temp'].max()
 yTime = dataIn['time (seconds)'].max()/60  
 
 
-yTime = round(yTime)
+yTime = round(yTime) # round to 2 decimal points
 newTime = time - yTime
 newTime2 = (time - yTime)*(-1)
 belSteps = steps - xSteps
@@ -98,8 +100,20 @@ def active(userName,xSteps,yTime):
         print(f"{userName}, excellent! You walked past your daily goal by {aboSteps} steps!")
     elif xSteps > steps:
         print(f"{userName}, amazing! You walked exceeded your daily goal by {aboSteps} steps!")
-userName = str(input('Enter your name: '))
-active(userName,xSteps,yTime)
+#userName = str(input('Enter your name: '))
+#active(userName,xSteps,yTime)
 
 # Expand
 # How active do yTimeou want to be per week e.g. float(5.5 hours)
+
+
+# 71 min | 7100 steps 
+# Average
+avgStep = 1000
+avgTime = 10
+
+print("Average value of steps: ", dataIn['steps'].mean())
+print("Average value of steps :", xSteps/71)
+
+#def average(xSteps,userName,yTime):
+    

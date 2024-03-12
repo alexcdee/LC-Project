@@ -29,7 +29,7 @@ plt.xticks(range(0, max(max(xSteps), max(xLight), max(xTemp)) + 1, 500))
 
 # Include specific values on the x-axis without overlapping
 specific_values = [8523, 158, 9]
-plt.xticks(list(plt.xticks()[0])[:-1] + specific_values + [max(max(xSteps), max(xLight), max(xTemp))])
+plt.xticks(list(plt.xticks()[0])[:-1] + specific_values)
 
 # Set x-axis limit to include the specific values
 plt.xlim(0, max(max(xSteps), max(xLight), max(xTemp)))
@@ -40,7 +40,7 @@ plt.xlim(0, max(max(xSteps), max(xLight), max(xTemp)))
 
 # Print last digit of the data
 print("\033[94mSteps\033[0m") # Blue colour text
-print("Average value of steps: ", dataIn['steps'].mean())
+print("Average value of steps: ", dataIn['steps'].max()/yTime)
 print("Median value of steps column: ", dataIn['steps'].median())
 print("Mode value of steps column: ", dataIn['steps'].mode())
 print("Max value of steps column: ", dataIn['steps'].max())

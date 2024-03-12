@@ -46,7 +46,7 @@ print("Mode value of steps column: ", dataIn['steps'].mode())
 print("Max value of steps column: ", dataIn['steps'].max())
 
 print("\033[95mTime in seconds\033[0m") # Red colour text
-print("Average value of time (seconds) column:", dataIn['time (seconds)'].mean())
+print("Average value of time (seconds) column:", yTime.mean())
 print("Median value of time (seconds) column:", dataIn['time (seconds)'].median())
 print("Mode value of time (seconds) column:", dataIn['time (seconds)'].mode())
 print("Max value of time (seconds) column:", dataIn['time (seconds)'].max())

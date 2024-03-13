@@ -1,0 +1,25 @@
+body {
+  background-color: white !important;
+}
+
+/* bootstrap */
+
+nav {
+  background-color: rgb(0, 0, 0);
+}
+
+.nav-link {
+  color: rgb(255, 255, 255) !important;
+}
+
+.navbar-brand {
+  color: rgb(255, 255, 255) !important;
+}
+
+#table1 {
+  font-size: 24px;
+}
+
+#li1 {
+  font-size: 24px;
+}

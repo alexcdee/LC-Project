@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Investigation</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -11,30 +11,42 @@
     />
 
     <style>
-      .wrapper {
-        display: grid;
-        justify-content: center;
-      }
+      body {
+                 text-align: center;
+             }
+             #content {
+                 display: inline-block;
+                 text-align: left;
+                 max-width: 800px;
+                 margin-top: 2%;
 
-      @media only screen and (max-width: 600px) {
-        .wrapper {
-          display: grid;
-        }
-      }
+             }
 
-      @media only screen and (max-width: 900px) {
-        .wrapper {
-          display: grid;
-          justify-content: center;
-        }
-      }
 
-      @media only screen and (max-width: 1200px) {
-        .wrapper {
-          display: grid;
-          justify-content: center;
-        }
-      }
+           .wrapper {
+             display: grid;
+             justify-content: center;
+           }
+
+           @media only screen and (max-width: 600px) {
+             .wrapper {
+               display: grid;
+             }
+           }
+
+           @media only screen and (max-width: 900px) {
+             .wrapper {
+               display: grid;
+               justify-content: center;
+             }
+           }
+
+           @media only screen and (max-width: 1200px) {
+             .wrapper {
+               display: grid;
+               justify-content: center;
+             }
+           }
     </style>
   </head>
 
@@ -73,8 +85,77 @@
       </div>
     </nav>
 
-    <div style="text-align: center; margin-top: 5%">
-      <h3>Text</h3>
+    <div id="content">
+      <h1 style="text-align: center;">Investigation</h1>
+
+      <p>
+        For my investigation I looked into various different types of ideas that
+        can enhance some aspect of wellbeing. Wellbeing is a positive state that
+        is experience by individuals and societies. I looked at:
+      </p>
+
+      <ul>
+        <li>Mental health</li>
+        <li>Physical health</li>
+        <li>Both physical and mental health</li>
+      </ul>
+
+      <p>I then looked into the factors that support wellbeing:</p>
+
+      <ul>
+        <li>Sleep</li>
+        <li>Money</li>
+        <li>Sports</li>
+        <li>Music</li>
+        <li>Meditation</li>
+      </ul>
+
+      <p>
+        I used search engines such as Microsoft Bing and Google to find out more
+        info on wellbeing and what ideas that are implemented with an embedded
+        system. I found out embedded systems such as the Apple Watch, Fitbit and
+        Garmin have any analogue/digital inputs/outputs that support wellbeing
+        such as a step tracker, heart monitor, mindfulness features, sleep
+        tracker, movement tracker and more.
+      </p>
+
+      <p>
+        At my initial plan I wanted to do a movement tracker, where my embedded
+        system of choice the Micro: BIT. This would track the user's activity
+        profile every hour if they were to sit down, e.g. If they sit on the
+        chair for a few hours, it would remind the user every hour to get up and
+        some sort of exercise whether it would be jumping jacks or squats. But I
+        thought that would have been too complicated for this project and would
+        take too much time to program and analyse.
+      </p>
+
+      <p>
+        I also carried out a survey forum for people to fill out. I had
+        questions that included:
+      </p>
+
+      <ul>
+        <li>How often do you participate in physical activities?</li>
+        <li>What's your favorite form of physical activity?</li>
+        <li>Do you have a device to track your activity?</li>
+      </ul>
+
+  
+      <img src="images/survery.png" alt="Survery Forum" width="500px" />
+      <p>
+        I found out that the most common participation in physical activity was
+        2-4/week. I found out that walking/jogging/running was the most common
+        form of physical activity. I found out the most people don’t use a
+        device to track their activity.
+      </p>
+      <p>
+        With this information, I settled on doing a step tracker because it has
+        the ability to track the user's physical activity with the amount of
+        steps they’ve done but also has other factors to take in such as to
+        check the light level and temperature outside and see if that would
+        affect the user's walk. My project is written in Python in the IDE
+        Thonny.
+      </p>
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Evaluation</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -11,30 +11,43 @@
     />
 
     <style>
-      .wrapper {
-        display: grid;
-        justify-content: center;
-      }
 
-      @media only screen and (max-width: 600px) {
-        .wrapper {
-          display: grid;
-        }
-      }
+      body {
+                        text-align: center;
+                    }
 
-      @media only screen and (max-width: 900px) {
-        .wrapper {
-          display: grid;
-          justify-content: center;
-        }
-      }
+                    #container {
+                        display: inline-block;
+                        text-align: left;
+                        max-width: 800px;
+                        margin-top: 2%;
+                    }
 
-      @media only screen and (max-width: 1200px) {
-        .wrapper {
-          display: grid;
-          justify-content: center;
-        }
-      }
+
+                  .wrapper {
+                    display: grid;
+                    justify-content: center;
+                  }
+
+                  @media only screen and (max-width: 600px) {
+                    .wrapper {
+                      display: grid;
+                    }
+                  }
+
+                  @media only screen and (max-width: 900px) {
+                    .wrapper {
+                      display: grid;
+                      justify-content: center;
+                    }
+                  }
+
+                  @media only screen and (max-width: 1200px) {
+                    .wrapper {
+                      display: grid;
+                      justify-content: center;
+                    }
+                  }
     </style>
   </head>
 
@@ -73,8 +86,59 @@
       </div>
     </nav>
 
-    <div style="text-align: center; margin-top: 5%">
-      <h3>Text</h3>
+    <div id="container">
+      <h1>Evaluation</h1>
+      <p>
+        I have made a few noticeable changes compared to my design stage.
+        Initially, I started with a step tracker that would track and log the
+        end-user's steps. The end-user is a person who is interested in
+        monitoring their daily physical activity levels or maintaining a healthy
+        lifestyle by keeping track of their steps using a step tracker. I also
+        had the ability to show the time gone by and display the amount of steps
+        taken when the end-user presses button A and button B. However, my
+        design has undergone a few modifications. I removed some parts and
+        implemented new ideas for the step tracker. I modified button A and
+        button B so that the end-user can set logging to true and false when
+        they are ready to begin their activity. Additionally, I added two more
+        analogue inputs, a light sensor and a heat sensor, to take into account
+        the end-user's wellbeing while outside.
+      </p>
+      <p>
+        While making my design, I did run into some issues. When the steps were
+        being logged, it would log as a new step taken and go up by 1. After
+        testing around, I found out how to change it so that the data would add
+        1 to the previous value so it would go like this 1, 2, ... 505. I also
+        ran into a few issues with my Python code. While making my graph, I did
+        struggle but I was able to overcome this with resources online. Another
+        issue I ran into was finding the mean of my steps. It would add all the
+        values together, giving a mean of 4,297. I was able to fix this by
+        getting the max value of steps and dividing it by the max value of (time
+        in seconds/60), giving me the value of 120, which was correct.
+      </p>
+      <p>
+        Overall, I stuck to my design of a step tracker but did make a few
+        changes. I believe I did stick to my brief, my initial objectives of
+        making a functional step tracker to track the end-user's physical and
+        mental wellbeing during their activity, storing the data in a CSV file,
+        performing statistical analysis on that CSV data and writing it in
+        Python, and addressing my two 'what if' questions. I feel like I have
+        achieved my goals of the basic and advanced requirements. Any issues I
+        faced during my project, I was able to effectively fix or work around
+        them.
+      </p>
+      <ul>
+        <li>
+          One improvement I could do is an improvement for the end-user. I only
+          made my data to work on if the end-user walks, but not if they decide
+          to jog or run.
+        </li>
+        <li>
+          Another improvement I could make in the future is looking at all my
+          goals and planning and designing all of them before starting to
+          program. This will prevent me from running into errors and effectively
+          saving me time during these 10 weeks.
+        </li>
+      </ul>
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

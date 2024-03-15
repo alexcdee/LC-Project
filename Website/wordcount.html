@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Word Count</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -11,6 +11,31 @@
     />
 
     <style>
+       body {
+                  text-align: center;
+              }
+
+              #container {
+                  display: inline-block;
+                  text-align: left;
+                  max-width: 800px;
+                  margin-top: 2%;
+              }
+        table {
+    border-collapse: collapse;
+    width: 80%;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
       .wrapper {
         display: grid;
         justify-content: center;
@@ -72,10 +97,35 @@
         </ul>
       </div>
     </nav>
-
-    <div style="text-align: center; margin-top: 5%">
-      <h3>Text</h3>
-    </div>
+<div id="container">
+  <h1>Word Count</h1>
+    <table>
+      <tr>
+        <td>Meeting the Brief</td>
+        <td>x</td>
+      </tr>
+      <tr>
+        <td>Investigation</td>
+        <td>358</td>
+      </tr>
+      <tr>
+        <td>Plan and Design</td>
+        <td>407</td>
+      </tr>
+      <tr>
+        <td>Create</td>
+        <td>955</td>
+      </tr>
+      <tr>
+        <td>Evaluation</td>
+        <td>474</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>x</td>
+      </tr>
+    </table>
+</div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

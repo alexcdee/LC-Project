@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Create</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -11,30 +11,88 @@
     />
 
     <style>
-      .wrapper {
-        display: grid;
-        justify-content: center;
+                    body {
+                             text-align: center;
+                         }
+                         #container2 {
+                             display: inline-block;
+                             text-align: left;
+                             max-width: 800px;
+                             margin-top: 2%;
+
+                         }
+      #container3 {
+        width: 80%;
+                  margin: 0 auto;
       }
 
-      @media only screen and (max-width: 600px) {
-        .wrapper {
-          display: grid;
-        }
-      }
+                         #content {
+                       display: inline-block;
+                       text-align: left;
+                       max-width: 800px;
+                       margin-top: 2%;
 
-      @media only screen and (max-width: 900px) {
-        .wrapper {
-          display: grid;
-          justify-content: center;
-        }
-      }
+                   }
+                         table {
+                        width: 100%;
+                        border-collapse: collapse;
+                    }
+                    th, td {
+                        padding: 8px;
+                        text-align: left;
+                        border-bottom: 1px solid #ddd;
+                    }
 
-      @media only screen and (max-width: 1200px) {
-        .wrapper {
-          display: grid;
-          justify-content: center;
-        }
-      }
+                    .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .section {
+                width: 30%; /* Adjust as needed */
+            }
+
+
+                  .wrapper {
+                    display: grid;
+                    justify-content: center;
+                  }
+
+                  @media only screen and (max-width: 600px) {
+                    .wrapper {
+                      display: grid;
+                    }
+                  }
+
+                  @media only screen and (max-width: 900px) {
+                    .wrapper {
+                      display: grid;
+                      justify-content: center;
+                    }
+                  }
+
+                  @media only screen and (max-width: 1200px) {
+                    .wrapper {
+                      display: grid;
+                      justify-content: center;
+                    }
+                  }
+
+                  table {
+                  width: 100%;
+                  border-collapse: collapse;
+              }
+
+              th, td {
+                  border: 1px solid #ddd;
+                  padding: 8px;
+                  text-align: left;
+              }
+
+              th {
+                  background-color: #f2f2f2;
+              }
     </style>
   </head>
 
@@ -72,9 +130,345 @@
         </ul>
       </div>
     </nav>
+    <div id="content">
+      <h1>Create</h1>
 
-    <div style="text-align: center; margin-top: 5%">
-      <h3>Text</h3>
+      <table>
+        <tr>
+          <th>Week</th>
+          <th>Activities</th>
+        </tr>
+        <tr>
+          <td>Week 1</td>
+          <td>
+            <ul>
+              <li>Read the brief, analysed it and done research.</li>
+              <li>Looked into factors that support wellbeing.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Week 2</td>
+          <td>
+            <ul>
+              <li>Looked into potential projects and decided the project.</li>
+              <li>Set a plan for the embedded system.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Week 3</td>
+          <td>
+            <ul>
+              <li>
+                Began the program for my embedded system of choice: Micro: BIT.
+              </li>
+              <li>Created digital inputs.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Week 4</td>
+          <td>
+            <ul>
+              <li>Created analogue inputs and storing data.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Week 5</td>
+          <td>
+            <ul>
+              <li>Finished the Micro: BIT program.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Week 6</td>
+          <td>
+            <ul>
+              <li>Done unit testing on the Micro: BIT.</li>
+              <li>Converted data to a csv file.</li>
+              <li>Chose IDE Thonny and programming language Python.</li>
+              <li>Began programming.</li>
+              <li>Read the csv file.</li>
+              <li>Completed BR3.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Week 7</td>
+          <td>
+            <ul>
+              <li>
+                Extracted data from csv file to find out the mean, median, mode
+                and max values.
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Week 8</td>
+          <td>
+            <ul>
+              <li>Began creating 'what if' questions.</li>
+              <li>Extracted data from csv file for 'what if' questions.</li>
+              <li>Completed first 'what if' question.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Week 9</td>
+          <td>
+            <ul>
+              <li>Began second 'what if' question.</li>
+              <li>Completed second 'what if' question.</li>
+              <li>Began to work on visualising csv data.</li>
+              <li>Created graph using matplotlib to visualise the data.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Week 10</td>
+          <td>
+            <ul>
+              <li>Conducted unit testing for Python program.</li>
+              <li>Ensured program runs and fixed any errors.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Week 11</td>
+          <td>
+            <ul>
+              <li>Focused on meeting the brief.</li>
+              <li>Finalised conducting all unit testing.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Week 12</td>
+          <td>
+            <ul>
+              <li>Initiated writing of evaluation stage.</li>
+              <li>Reflected upon initial design and final design.</li>
+              <li>Compared errors from beginning to end of project.</li>
+              <li>
+                Done critical assessment of project's strengths and areas for
+                improvement.
+              </li>
+              <li>Began recording video for meeting the brief stage.</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <br />
+    <p><strong>BR 1</strong></p>
+    <p><strong>Create Stage for Micro: BIT</strong></p>
+    <p>I began working on the Micro: BIT, I chose to create a step tracker.</p>
+    <div class="container">
+      <div class="section">
+        <p><strong>V1</strong></p>
+        <img src="images/mb_v1.png" alt="Micro: Bit Verison 1" width="350px" />
+        <p>
+          I did not like this initial design as one problem I had was the steps
+          would be only logged with the value of 1 each time.
+        </p>
+        <img
+          src="images/mb_v1_data.png"
+          alt="Micro: Bit Data Verison 1"
+          width="250px"
+        />
+      </div>
+
+      <div class="section">
+        <p><strong>V2</strong></p>
+        <p>
+          I wanted to implement more analogue inputs so I added light level and
+          temperature inputs to the Micro: BIT. I also changed the logging
+          process for the accelerometer to the variable steps so it would log
+          the data and add the next value to the previous one.
+        </p>
+        <p>
+          Also added to delete previous data log, so when the end-user can
+          delete the previous log for their next walk and added button A+B to
+          play a melody.
+        </p>
+        <img src="images/mb_v2.png" alt="Micro: Bit Verison 2" width="350px" />
+        <br />
+        <img
+          src="images/mb_v2_data.png"
+          alt="Micro: Bit Data Verison 2"
+          width="250px"
+        />
+      </div>
+
+      <div class="section">
+        <p><strong>BR 2</strong></p>
+        <p><strong>V3 Final Version</strong></p>
+        <p>
+          Decided to add logging to true/false. On start logging is set to false
+          and when the user is ready for their walk they can press button A so
+          the Micro: BIT can start logging. Once the user is done with their
+          walk, they would press button B to set logging to false, so that the
+          Micro: BIT wouldn't log any useless data.
+        </p>
+        <img src="images/mb_v3.png" alt="Micro: Bit Verison 3" width="350px" />
+      </div>
+    </div>
+    <br />
+    <div id="container">
+      <p><strong>Python Program</strong></p>
+      <p>
+        My IDE of choice was Thonny and <br />my programming language of choice
+        was Python.
+      </p>
+      <p>
+        After I got my data from the Micro: BIT, I extracted it to a csv file.
+        <br />
+        I imported two libraries pandas as pd and matplotlib.pyplot as plt.
+      </p>
+      <div class="image-container">
+        <img src="images/import.png" alt="Imported libraries" width="250px" />
+        <img src="images/read_data.png" alt="Read the csv file" width="350px" />
+        <img src="images/extract_data.png" alt="Extract data" width="350px" />
+      </div>
+    </div>
+
+    <div id="container2">
+      <p><strong>BR 3</strong></p>
+      <p>
+        For my BR 3 I found the average, median, mode and max values for my data
+        of: steps, temperature, light and time divided by 72 to convert it into
+        minutes. These values were used to help with calculate certain
+        information and analyse my data. At the start I tried finding the mean
+        of my steps but I was getting the value 4297.633802816901 when I was
+        supposed to be getting 120 but I figured out the problem and fixed it by
+        diving the last value of steps by the last value of time.
+      </p>
+      <img src="images/stats_data.png" alt="Statistical data" width="500px" />
+    </div>
+    <br />
+
+    <div id="container2">
+      <p><strong>AR 1/2</strong></p>
+      <p>
+        First 'what if' question - What if the user walks less or more than
+        their daily goal? Three parameters which consists of the user's name
+        (string), steps (integer) and time (float). Before I began with my
+        function I had to do some calculations for the 'what if' question, I
+        calculated, if the steps and time were below the average and if the
+        steps and time were above the average. I hard coded the average steps to
+        7500 and the next best range of steps to 10000 and time to 69, all of
+        that was based on my research online.
+      </p>
+      <img
+        src="images/1_hard.png"
+        alt="Hard code for 1st 'what if' question"
+        width="150px"
+      />
+      <img
+        src="images/1_data.png"
+        alt="Data for 1st 'what if' question"
+        width="250px"
+      />
+      <img
+        src="images/1_new_data.png"
+        alt="New data for 1st 'what if' question"
+        width="200px"
+      />
+      <img
+        src="images/1_what_if.png"
+        alt="1st 'what if' question"
+        width="600px"
+      />
+    </div>
+    <br />
+    <div id="container2">
+      <p>
+        Second 'what if' question. - What if the temperature and light level
+        affects the user's average steps per minute Three parameters which
+        consists of the average steps per minute (float), the temperature
+        (integer) and light level (integer). I hard coded the average steps a
+        person takes is found to be around 100, and the best temperature to
+        outside is at above 15° and daytime was the best light level to go
+        outside in.
+      </p>
+      <img src="" alt="" />
+    </div>
+    <br />
+    <div id="container2">
+      <p><strong>AR 3</strong></p>
+      <p>
+        For my AR 3 I created a line graph for my data that was extracted from
+        the csv file.
+      </p>
+      <img src="images/ar3_1.png" alt="Plotting the graph" width="250px" />
+      <img src="images/ar3_2.png" alt="Labeling the graph" width="250px" />
+      <img src="images/ar3_3.png" alt="Show the graph" width="150px" />
+      <img src="images/ar3_plot_1.png" alt="First graph" width="500px" />
+      <p>
+        Then I wanted to the graph to go in intervals of 500 and for each data
+        value I wanted to have a specific value for each one that shows that max
+        value reached for each data value, e.g. Steps max value was 8523 So I
+        done some research and found out about xticks and xlim for my graph.
+      </p>
+    </div>
+    <br />
+    <img
+      src="images/ar3_xtick.png"
+      alt="Setting graph to go intervals of 500"
+      width="450px"
+    />
+    <img
+      src="images/ar3_specific.png"
+      alt="Setting specific values on graph"
+      width="450px"
+    />
+    <img
+      src="images/ar3_xlim.png"
+      alt="Setting the specific values on graph"
+      width="450px"
+    />
+    <br />
+    <br />
+    <div id="container3">
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Description</th>
+          <th>Test data</th>
+          <th>Expected Values</th>
+          <th>Actual result</th>
+          <th>Passed Y or N</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>To record steps taken when user takes a step and log data</td>
+          <td>Input of steps</td>
+          <td>500</td>
+          <td>500</td>
+          <td>Y</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>To record temperature outside and log data</td>
+          <td>Input of temperature</td>
+          <td>9°</td>
+          <td>9°</td>
+          <td>Y</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>To find the mean of my steps</td>
+          <td>Input of data: 'steps'</td>
+          <td>120</td>
+          <td>4297.63</td>
+          <td>N</td>
+        </tr>
+      </table>
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
